@@ -63,7 +63,7 @@ if (!empty($_GET['error'])) {
         'code' => $_GET['code']
     ]);
 
-    // Optional: Now you have a token you can look up a users profile data
+    // Optional: Now you have a token you can look up an account data
     try {
 
         // We got an access token, let's now get the owner details
@@ -74,12 +74,12 @@ if (!empty($_GET['error'])) {
 
     } catch (Exception $e) {
 
-        // Failed to get user details
+        // Failed to get account details
         exit('Something went wrong: ' . $e->getMessage());
 
     }
 
-    // Use this to interact with an API on the users behalf
+    // Use this to interact with an API on the account behalf
     echo $token->accessToken;
 
     // Use this to get a new access token if the old one expires

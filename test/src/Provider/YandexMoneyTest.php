@@ -121,6 +121,6 @@ class YandexMoneyTest extends \PHPUnit_Framework_TestCase
             ->andReturn($response);
 
         $token = m::mock('League\OAuth2\Client\Token\AccessToken');
-        $user = $provider->getResourceOwner($token);
+        $account = $provider->getResourceOwner($token);
     }
 }
