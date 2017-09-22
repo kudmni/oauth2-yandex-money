@@ -11,6 +11,18 @@ class YandexMoneyAccount implements ResourceOwnerInterface
      */
     protected $response;
 
+    const STATUS_ANONYMOUS  = 'anonymous';
+    const STATUS_NAMED      = 'named';
+    const STATUS_IDENTIFIED = 'identified';
+
+    const TYPE_PERSONAL     = 'personal';
+    const TYPE_PROFESSIONAL = 'professional';
+
+    const CARD_TYPE_VISA            = 'VISA';
+    const CARD_TYPE_MASTERCARD      = 'MasterCard';
+    const CARD_TYPE_AMERICANEXPRESS = 'AmericanExpress';
+    const CARD_TYPE_JCB             = 'JCB';
+
     /**
      * @param array $response
      */
