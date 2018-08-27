@@ -16,12 +16,12 @@ class YandexMoney extends AbstractProvider
 
     public function getBaseAuthorizationUrl()
     {
-        return 'https://sp-money.yandex.ru/oauth/authorize';
+        return 'https://money.yandex.ru/oauth/authorize';
     }
 
     public function getBaseAccessTokenUrl(array $params)
     {
-        return 'https://sp-money.yandex.ru/oauth/token';
+        return 'https://money.yandex.ru/oauth/token';
     }
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)
